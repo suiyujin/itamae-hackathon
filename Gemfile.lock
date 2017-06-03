@@ -11,6 +11,8 @@ GEM
       thor
     itamae-plugin-recipe-rtn_git (0.1.4)
       itamae (>= 1.5.2)
+    itamae-plugin-recipe-tmux (0.1.2)
+      itamae
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
@@ -30,6 +32,7 @@ PLATFORMS
 DEPENDENCIES
   itamae
   itamae-plugin-recipe-rtn_git
+  itamae-plugin-recipe-tmux
 
 BUNDLED WITH
    1.12.5
