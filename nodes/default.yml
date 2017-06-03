@@ -1,3 +1,6 @@
+users:
+  - suiyujin
+  - hogehoge
 platform: redhat
 rtn_git:
   version: 2.13.0
