@@ -1,3 +1,8 @@
 platform: redhat
 rtn_git:
   version: 2.13.0
+tmux:
+  prefix: /usr/local
+  version: 2.5
+libevent:
+  version: 2.1.8
