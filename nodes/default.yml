@@ -1,5 +1,6 @@
 users:
   - suiyujin
+  - deploy
   - hogehoge
 zsh_users:
   - suiyujin
@@ -11,3 +12,16 @@ tmux:
   version: 2.5
 libevent:
   version: 2.1.8
+mysql:
+  password: hogepassword
+rtn_rbenv:
+  user: root
+  versions:
+    2.3.4:
+      - bundler
+      - pry
+      - pry-doc
+      - pry-byebug
+  global: 2.3.4
+rails:
+  app_name: hogeapp

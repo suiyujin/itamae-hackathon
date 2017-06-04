@@ -1,0 +1,19 @@
+upstream unicorn_server {
+    server unix:/var/www/<%= @app_name %>/current/tmp/unicorn.sock;
+}
+
+server {
+    listen 8000 default_server;
+    server_name sample.com;
+    access_log /var/log/nginx/access_<%= @app_name %>.log;
+    error_log /var/log/nginx/error_<%= @app_name %>.log;
+
+    root /var/www/<%= @app_name %>/current;
+
+    location / {
+      if (!-f $request_filename) {
+        proxy_pass http://unicorn_server;
+        break;
+      }
+    }
+}
