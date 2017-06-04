@@ -11,6 +11,8 @@ tmux:
   version: 2.5
 libevent:
   version: 2.1.8
+mysql:
+  password: hogepassword
 rtn_rbenv:
   user: root
   versions:
