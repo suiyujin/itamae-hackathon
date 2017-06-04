@@ -11,4 +11,3 @@ directory "/var/www/#{node[:rails][:app_name]}" do
   group 'deploy'
   not_if "test -d /var/www/#{node[:rails][:app_name]}"
 end
-
